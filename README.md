@@ -43,10 +43,32 @@ Refer to the instructions for installing and configuring Spark in the documentat
 spark-shell -i project.scala
 finalProject.main(Array("file:///user/maria_dev/finalProject/Bank.txt"))
 ```
-### Java
-```
-spark-submit --class "com.example.bank.BankApplication" --master local ./target/data.jar
-```
+## Queries
+
+| Analysis Goal          | Spark SQL Query                                                                         |
+| ---------------------- | --------------------------------------------------------------------------------------- |
+| Marketing Success Rate | `SELECT count(CASE y WHEN 'yes' THEN 1 END)/count(*)*100 AS success_rate FROM bankdata` |
+| Marketing Failure Rate | `SELECT count(CASE y WHEN 'no' THEN 1 END)/count(*)*100 AS failure_rate FROM bankdata`  |
+| Age Statistics         | `SELECT max(age), min(age), avg(age) FROM bankdata`                                     |
+| Customer Quality       | `SELECT percentile_approx(balance, 0.5), avg(balance) FROM bankdata`                    |
+| Age vs Subscription    | `SELECT age, y FROM bankdata GROUP BY age, y`                                           |
+| Marital Status Impact  | `SELECT marital, y FROM bankdata GROUP BY marital, y`                                   |
+| Combined Effect        | `SELECT age, marital, y FROM bankdata GROUP BY age, marital, y`                         |
+
+
+## Results
+#### Success and failure rates displayed in real-time console output
+#### Aggregate insights such as:
+Average customer balance
+Median balance
+Impact of demographics on deposit subscription
+
+## Contributors
+Mashir Nizami
+Anam Tamboli
+Piyush Bodhani
+Vrishali More
+Partheev Boora
 
 ## Dataset
 Use the **Bank Marketing Dataset** from [UCI Repository](https://archive.ics.uci.edu/ml/datasets/bank+marketing).
