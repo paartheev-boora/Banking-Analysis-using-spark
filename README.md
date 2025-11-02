@@ -33,8 +33,8 @@ The **Banking Analysis Project** uses Spark Structured Streaming to analyze mark
 - Maven (for Java builds)
 
 ## Installation
-https://medium.com/@dhirajmishra57/installing-spark-3-5-on-windows-e9bd183f84b9
-Refer to the instructions for installing and configuring Spark in the documentation above.
+- https://medium.com/@dhirajmishra57/installing-spark-3-5-on-windows-e9bd183f84b9
+- Refer to the instructions for installing and configuring Spark in the documentation above.
 
 
 ## Running
@@ -59,16 +59,16 @@ finalProject.main(Array("file:///user/maria_dev/finalProject/Bank.txt"))
 ## Results
 #### Success and failure rates displayed in real-time console output
 #### Aggregate insights such as:
-Average customer balance
-Median balance
-Impact of demographics on deposit subscription
+- Average customer balance
+- Median balance
+- Impact of demographics on deposit subscription
 
 ## Contributors
-Mashir Nizami
-Anam Tamboli
-Piyush Bodhani
-Vrishali More
-Partheev Boora
+- Mashir Nizami
+- Anam Tamboli
+- Piyush Bodhani
+- Vrishali More
+- Partheev Boora
 
 ## Dataset
 Use the **Bank Marketing Dataset** from [UCI Repository](https://archive.ics.uci.edu/ml/datasets/bank+marketing).
