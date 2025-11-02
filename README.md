@@ -7,12 +7,10 @@ It analyzes customer demographics, account balance, and marketing campaign outco
 - About the Project
 - Features
 - Technologies Used
-- Project Structure
 - Installation & Setup
 - Running the Project
-- Sample Queries
+- Queries
 - Results
-- Requirements
 - Contributors
 - License
 
