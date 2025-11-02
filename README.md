@@ -33,7 +33,9 @@ The **Banking Analysis Project** uses Spark Structured Streaming to analyze mark
 - Maven (for Java builds)
 
 ## Installation
+https://medium.com/@dhirajmishra57/installing-spark-3-5-on-windows-e9bd183f84b9
 Refer to the instructions for installing and configuring Spark in the documentation above.
+
 
 ## Running
 ### Scala
